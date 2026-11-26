@@ -1,0 +1,34 @@
+---
+layout: default
+---
+{% if site.posts.size > 0 %}
+<ul class="cards">
+  {% for post in site.posts %}
+  <li class="card">
+    {% if post.image %}
+      {% if post.image contains '://' %}
+        {% assign img = post.image %}
+      {% else %}
+        {% assign img = post.image | relative_url %}
+      {% endif %}
+      <a class="card-image" href="{{ post.url | relative_url }}" tabindex="-1" aria-hidden="true">
+        <img src="{{ img }}" alt="" loading="lazy">
+      </a>
+    {% endif %}
+
+    <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+
+    <p class="card-date">
+      <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="1"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time>
+    </p>
+
+    <p class="excerpt">{{ post.content | strip_html | strip_newlines | truncatewords: 30 }}</p>
+
+    <a class="read-more" href="{{ post.url | relative_url }}" aria-label="Read more: {{ post.title | escape }}">Read more</a>
+  </li>
+  {% endfor %}
+</ul>
+{% else %}
+<p class="empty">No stories yet. Add a file to the <code>_posts</code> folder to print the first one.</p>
+{% endif %}

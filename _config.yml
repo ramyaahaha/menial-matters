@@ -1,0 +1,17 @@
+title: "Menial matters"
+description: "everyday elsewhere notes from nowhere and dispatches from my brain"
+lang: en
+
+baseurl: "/menial-matters"
+
+permalink: /:year/:month/:day/:title/
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+
+exclude:
+  - README.md

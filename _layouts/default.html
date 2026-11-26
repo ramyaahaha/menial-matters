@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.layout == 'post' %}{{ page.date | date: "%B %-d, %Y" }} - {{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{{ site.description }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      {% if page.url == '/' %}
+        <h1 class="masthead-title">{{ site.title }}</h1>
+        <p class="tagline">{{ site.description }}</p>
+      {% else %}
+        <p class="back-top"><a href="{{ '/' | relative_url }}" aria-label="Back to other menial matters">&lt;&lt;</a></p>
+        <h1 class="page-date">
+          <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%A, %B %-d, %Y" }}</time>
+        </h1>
+      {% endif %}
+    </div>
+  </header>
+
+  <main class="wrap">
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <p>Ramya and her menial matters, {{ 'now' | date: '%Y' }}</p>
+  </footer>
+</body>
+</html>
