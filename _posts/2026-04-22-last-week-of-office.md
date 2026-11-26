@@ -42,11 +42,11 @@ I feel nothing. Just a beautiful friday evening, yellow lights at Suhani’s hou
 
 ---
 
-Last sunday night before my last monday morning in office, I am going to sleep and I dont have it in me to write an entry rn.
+**(last sunday)** night before my last monday morning in office, I am going to sleep and I dont have it in me to write an entry rn.
 
 ---
 	
-**last Monday, 20 Apr’26**
+**(last) Monday, 20 Apr’26**
 
 Heading to office in the auto with Ira, the last time I’ll be sitting with her in a rickshaw heading to office. As ritual, she talked for a while and now is asleep. This time w/o her earphones on. idiosyncrasies. I am going to miss witnessing all of this and learning about it. I don't know if Chinj is coming to office. Bodhi’s sick and in Pune. Udit is out of reach. And yeah, it’s a great learning lesson that occasions, days, evenings and very often nights are messy. They don't always end with the clean, clear climactic happy/sad ending that can be fit into boxes. 
 
